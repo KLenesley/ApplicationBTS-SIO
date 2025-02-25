@@ -16,6 +16,9 @@ Vous pouvez suivre l'avancée du projet [sur cette page](https://github.com/user
 
 ## Branche de prog de Kylian ([@KLenesley](https://github.com/KLenesley))
 Utilisation de biliothèque comme FA, WA, ect.
+> [Font Awesome](https://fontawesome.com/)
+> [Web Awesome](https://backers.webawesome.com/)
+> [Bootstrap](https://getbootstrap.com/)
 > Palette de couleurs utilisée : https://www.colorhunt.co/palette/7c93c355679c1e2a5ee1d7b7
 
 ## Fonctionnalités principales
