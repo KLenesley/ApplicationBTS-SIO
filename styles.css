@@ -6,14 +6,16 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
-    color: #343a40;
+    background-color: #E1D7B7; /* Couleur de fond claire */
+    color: #1E2A5E; /* Couleur de texte principale */
     line-height: 1.6;
+    padding-left: 250px; /* Espace pour la barre de navigation */
+    transition: padding-left 0.3s ease;
 }
 
 /* HEADER */
 header {
-    background-color: #4e73df;
+    background-color: #55679C; /* Couleur secondaire */
     color: white;
     text-align: center;
     padding: 50px 20px;
@@ -30,22 +32,41 @@ header p {
 
 /* NAVIGATION */
 nav {
-    background-color: #2c3e50;
-    padding: 15px 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #1E2A5E; /* Couleur d'accent */
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 20px;
+    display: block;
+    padding: 15px 20px;
     font-size: 1.1rem;
     font-weight: 500;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 nav a:hover {
-    color: #f39c12;
-    transform: scale(1.1);
+    background-color: #55679C; /* Couleur secondaire au survol */
+}
+
+/* TOGGLE NAV BUTTON */
+.toggle-nav-btn {
+    background-color: #1E2A5E;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute; /* Position absolute to place it in the top right */
+    top: 10px;
+    right: 10px;
+    display: none; /* Hidden by default */
 }
 
 /* SECTIONS */
@@ -60,12 +81,12 @@ section {
 
 section h2 {
     font-size: 2.5rem;
-    color: #2c3e50;
+    color: #55679C; /* Couleur secondaire pour les titres */
     margin-bottom: 15px;
 }
 section h3 {
     font-size: 2rem;
-    color: #2c3e50;
+    color: #55679C; /* Couleur secondaire pour les sous-titres */
     margin-top: 30px;
 }
 section p {
@@ -89,13 +110,13 @@ li::before {
     position: absolute;
     left: 0;
     font-size: 1.5rem;
-    color: #4e73df;
+    color: #7C93C3; /* Couleur principale pour les puces */
 }
 
 /* BUTTON STYLES */
 .cta-btn {
     display: inline-block;
-    background-color: #f39c12;
+    background-color: #1E2A5E; /* Couleur d'accent pour les boutons */
     color: white;
     padding: 12px 30px;
     border-radius: 30px;
@@ -106,30 +127,41 @@ li::before {
     margin-top: 20px;
 }
 .cta-btn:hover {
-    background-color: #e67e22;
+    background-color: #55679C; /* Couleur secondaire au survol */
 }
 
 /* FOOTER */
 footer {
-    background-color: #4e73df;
+    background-color: #55679C; /* Couleur secondaire */
     color: white;
     text-align: center;
     padding: 15px 0;
     position: fixed;
-    width: 100%;
+    width: calc(100% - 250px);
     bottom: 0;
+    left: 250px;
+    transition: width 0.3s ease, left 0.3s ease;
 }
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
+    body {
+        padding-left: 0;
     }
-    nav a {
-        font-size: 1rem;
-        margin: 0 15px;
+    .toggle-nav-btn {
+        display: block; /* Show button on small screens */
     }
-    section {
-        padding: 40px 10px;
+    nav {
+        transform: translateX(-100%); /* Hide nav by default */
+    }
+    nav.show {
+        transform: translateX(0); /* Show nav when button is clicked */
+    }
+    body.nav-open {
+        padding-left: 250px;
+    }
+    footer {
+        width: 100%;
+        left: 0;
     }
 }
