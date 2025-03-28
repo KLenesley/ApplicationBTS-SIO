@@ -31,8 +31,8 @@ export default function RootLayout({
         <Head/>     {/* Navbar */}
         <br/><br/>
         {children}  {/* Contenue de la page */}
-        <br/><br/>  {/* Footer */}
-        <Foot/>
+        <br/><br/>
+        <Foot/>     {/* Footer */}
       </body>
     </html>
   );
