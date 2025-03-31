@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-import Head from "@/app/headfoot/head"; // src/app/headfoot/head.tsx (C'est la navbar pour l'instant)
-import Foot from "./headfoot/foot";     // src/app/headfoot/foot.tsx (C'est le footer pour l'instant)
+import Head from "@/components/headfoot/head"; // src/app/headfoot/head.tsx (C'est la navbar pour l'instant)
+import Foot from "../components/headfoot/foot";     // src/app/headfoot/foot.tsx (C'est le footer pour l'instant)
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,13 +26,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Head/>     {/* Navbar */}
-        <br/><br/>
-        {children}  {/* Contenue de la page */}
-        <br/><br/>
-        <Foot/>     {/* Footer */}
+    <html lang="fr" className="h-full">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-full flex flex-col`}>
+        <Head /> {/* Navbar */}
+        <main className="flex-grow flex flex-col">{children}</main> {/* Content fills remaining space */}
+        <Foot /> {/* Footer */}
       </body>
     </html>
   );

@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #1E2A5E;
+  --foreground: #E1D7B7;
+  --primary: #55679C;
+  --secondary: #7C93C3;
+  --tertiary: #E1D7B7;
+  --accent: #7C93C3;
+  --header-footer-bg: #2A3B7E; /* Couleur header et footer */
 }
 
 @theme inline {
@@ -14,13 +19,25 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1E2A5E;
+    --foreground: #E1D7B7;
+    --primary: #55679C;
+    --secondary: #7C93C3;
+    --tertiary: #E1D7B7;
+    --accent: #7C93C3;
+    --header-footer-bg: #2A3B7E; /* Couleur header et footer */
   }
+}
+
+html, body {
+  height: 100%; /* Ensure the html and body take up the full height of the viewport */
+  margin: 0; /* Remove default margin */
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  display: flex; /* Use flexbox to center content */
+  flex-direction: column;
 }
