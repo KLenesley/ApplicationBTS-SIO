@@ -1,7 +1,7 @@
 export default function Foot() {
     return (
-        <footer className="bg-blue-900 text-white text-center py-6">
-            <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <footer className="bg-gray-800 text-white text-center relative py-7">
+            <div className="container mx-auto flex flex-col justify-center items-center space-y-4">
                 <p className="p-2 m-0">
                     <a href="/contact" className="hover:none text-cyan-200 transition-colors duration-300 hover:text-cyan-400">Contact</a>
                 </p>
