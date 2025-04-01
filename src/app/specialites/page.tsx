@@ -17,7 +17,7 @@ const Specialites = () => {
             </header>
 
             <main className="w-full max-w-3xl">
-            <section className="mb-12">
+            <section className="bg-white shadow-lg rounded-xl p-8 border border-gray-200 mb-12 text-center hover:shadow transition-shadow duration-300">
                 <h2 className="text-2xl font-semibold mb-6 text-center">Liste des Spécialités</h2>
                 <ul className="list-disc list-inside">
                 {specialites.map((specialite, index) => (
@@ -25,7 +25,24 @@ const Specialites = () => {
                 ))}
                 </ul>
             </section>
-            <section className="text-center">
+
+            <section className="bg-white shadow-lg rounded-xl p-8 border border-gray-200 mb-12 text-center hover:shadow transition-shadow duration-300">
+                <h2 className="text-2xl font-semibold mb-6 ">SLAM</h2>
+                <p>
+                La spécialité SLAM se concentre sur le développement d'applications logicielles et la création de solutions informatiques adaptées aux besoins des entreprises. 
+                Les étudiants apprennent à concevoir, développer et maintenir des applications, en utilisant divers langages de programmation et technologies.
+                </p>
+            </section>
+
+            <section className="bg-white shadow-lg rounded-xl p-8 border border-gray-200 mb-12 text-center hover:shadow transition-shadow duration-300">
+                <h2 className="text-2xl font-semibold mb-6">SISR</h2>
+                <p>
+                La spécialité SISR est axée sur la gestion des infrastructures informatiques et des réseaux. 
+                Les étudiants acquièrent des compétences en administration de systèmes, en sécurité des réseaux et en gestion des services informatiques.
+                </p>
+            </section>
+
+            <section className="bg-white shadow-lg rounded-xl p-8 border border-gray-200 mb-12 text-center hover:shadow transition-shadow duration-300">
                 <h2 className="text-2xl font-semibold mb-6">Cybersécurité</h2>
                 <p>
                 La cybersécurité est une compétence essentielle dans le domaine de l'informatique. 

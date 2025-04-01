@@ -3,7 +3,7 @@ export default function Presentation() {
 
         <div>
             <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-                <header className="text-center">
+                <header className="text-center mb-12">
                     <h1 className="text-4xl font-bold">Présentation du BTS SIO</h1>
                     <p className="text-lg text-gray-600 mt-2">
                         Découvrez le BTS Services Informatiques aux Organisations et tout ce qu'il propose pour vous former aux métiers de l'informatique.
@@ -11,7 +11,7 @@ export default function Presentation() {
                 </header>
 
                 <main className="w-full max-w-6xl">
-                    <section className="mb-12">
+                    <section className="bg-white shadow-lg rounded-xl p-8 border border-gray-200 mb-12">
                         <h2 className="text-2xl font-semibold mb-6 text-center">Qu'est-ce que le BTS SIO ?</h2>
                         <p className="text-gray-600 max-w-3xl mx-auto text-center">
                             Le BTS SIO (Services Informatiques aux Organisations) est une formation de deux ans qui prépare les étudiants à devenir des professionnels de l'informatique. 
@@ -19,7 +19,7 @@ export default function Presentation() {
                         </p>
                     </section>
 
-                    <section className="mb-12">
+                    <section className="bg-white shadow-lg rounded-xl p-8 border border-gray-200 mb-12">
                         <h2 className="text-2xl font-semibold mb-6 text-center">Les Spécialités</h2>
                         <div className="text-gray-600 max-w-3xl mx-auto">
                             <h3 className="text-xl font-semibold mt-4">SISR (Solutions d'Infrastructure, Systèmes et Réseaux)</h3>
@@ -35,7 +35,7 @@ export default function Presentation() {
                         </div>
                     </section>
 
-                    <section className="text-center">
+                    <section className="bg-white shadow-lg rounded-xl p-8 border border-gray-200 text-center mb-12">
                         <h2 className="text-2xl font-semibold mb-4">Pourquoi choisir le BTS SIO ?</h2>
                         <ul className="list-disc list-inside text-gray-600 max-w-3xl mx-auto text-left">
                             <li>Une formation professionnalisante avec des stages en entreprise.</li>

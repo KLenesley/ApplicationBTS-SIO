@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <header className="text-center">
-      <h1 className="text-4xl font-bold">Bonjour {user} !</h1>
+      <h1 className="text-4xl font-bold">Bonjour {user}</h1>
       <p className="text-lg text-gray-600 mt-2">
-        Bienvenue sur le site des SIO
+        Bienvenue sur le site de présentation du BTS SIO !
       </p>
       </header>
 
@@ -20,14 +20,14 @@ export default function Home() {
         <h2 className="text-2xl font-semibold mb-6 text-center">
         Présentation du BTS SIO
         </h2>
-        <p className="text-lg">
-        Le BTS SIO (Services Informatiques aux Organisations) est une
+        <p className="text-lg text-center">
+        Le BTS SIO (<i>Services Informatiques aux Organisations</i>) est une
         formation en informatique qui prépare les étudiants à devenir des
         professionnels compétents dans le domaine des technologies de
         l'information.
         </p>
       </section>
-      <section className="flex flex-col items-center gap-6">
+      <section className="bg-white shadow-lg rounded-xl p-8 border border-gray-200 mb-12 text-center hover:shadow transition-shadow duration-300">
         <h2 className="text-2xl font-semibold mb-4 text-center">
           Navigation
         </h2>
@@ -35,7 +35,7 @@ export default function Home() {
           <li>
         <a
           href="/presentation"
-          className="rounded-full border border-solid border-black/[.05] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[gainsboro] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto"
+          className="rounded-md bg-gray-200 text-gray-800 font-medium text-sm sm:text-base py-2 px-4 sm:py-3 sm:px-6 shadow hover:bg-gray-300 transition-colors duration-300"
         >
           Présentation du BTS SIO
         </a>
@@ -43,7 +43,7 @@ export default function Home() {
           <li>
         <a
           href="/quiz"
-          className="rounded-full border border-solid border-black/[.05] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[gainsboro] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto"
+          className="rounded-md bg-gray-200 text-gray-800 font-medium text-sm sm:text-base py-2 px-4 sm:py-3 sm:px-6 shadow hover:bg-gray-300 transition-colors duration-300"
         >
           Quiz "Suis-je fait pour le BTS SIO ?"
         </a>
@@ -51,7 +51,7 @@ export default function Home() {
           <li>
         <a
           href="/specialites"
-          className="rounded-full border border-solid border-black/[.05] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[gainsboro] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto"
+          className="rounded-md bg-gray-200 text-gray-800 font-medium text-sm sm:text-base py-2 px-4 sm:py-3 sm:px-6 shadow hover:bg-gray-300 transition-colors duration-300"
         >
           Découvrir les spécialités
         </a>

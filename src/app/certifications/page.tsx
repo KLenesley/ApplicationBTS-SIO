@@ -4,44 +4,62 @@ import React from 'react';
 
 const CertificationsPage: React.FC = () => {
     return (
-        <div className="container mx-auto px-4 py-8 font-sans text-gray-800">
-            <h1 className="text-3xl font-bold mb-6 text-center">Certifications du BTS SIO</h1>
-            <p className="mb-6 text-justify">
-            Le BTS Services Informatiques aux Organisations (SIO) propose plusieurs certifications qui permettent aux étudiants de valider leurs compétences techniques et professionnelles. Ces certifications sont reconnues dans le domaine de l'informatique et valorisent le parcours des étudiants.
+        <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-white to-gray-100 p-8 sm:p-20 font-[family-name:var(--font-geist-sans)] text-gray-900">
+            <header className="text-center mb-12">
+            <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight">
+                Certifications
+            </h1>
+            <p className="text-base sm:text-lg mt-4 max-w-2xl mx-auto text-gray-700">
+                Découvrez ce que vous devez savoir sur les certifications professionnelles et l'épreuve finale du BTS SIO.
             </p>
+            </header>
 
-            <h2 className="text-2xl font-semibold mb-4">Objectifs des Certifications</h2>
-            <p className="mb-4">
-            Les certifications visent à :
-            </p>
-            <ul className="list-disc list-inside mb-6">
-            <li>Valider les compétences techniques acquises durant la formation.</li>
-            <li>Attester de la maîtrise des outils et technologies utilisés en entreprise.</li>
-            <li>Renforcer l'employabilité des étudiants sur le marché du travail.</li>
-            </ul>
+            <main className="w-full max-w-4xl space-y-12">
+            <section className="bg-white shadow-lg rounded-xl p-8 border border-gray-200 hover:shadow transition-shadow duration-300">
+                <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-6 text-gray-800">
+                Objectifs des Certifications
+                </h2>
+                <p className="text-gray-700 text-center mb-4">
+                Les certifications valident les compétences techniques et professionnelles tout en renforçant l'employabilité.
+                </p>
+                <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>Valider les compétences techniques acquises durant la formation.</li>
+                <li>Attester de la maîtrise des outils et technologies utilisés en entreprise.</li>
+                <li>Renforcer l'employabilité des étudiants sur le marché du travail.</li>
+                </ul>
+            </section>
 
-            <h2 className="text-2xl font-semibold mb-4">Épreuve Finale</h2>
-            <p className="mb-4">
-            Lors de l'examen final, les étudiants doivent démontrer leurs compétences à travers des épreuves pratiques et théoriques. Ces épreuves incluent :
-            </p>
-            <ul className="list-disc list-inside mb-6">
-            <li>La réalisation d'un projet informatique en lien avec les certifications.</li>
-            <li>Une présentation orale devant un jury professionnel.</li>
-            <li>Des tests techniques pour valider les connaissances spécifiques.</li>
-            </ul>
+            <section className="bg-white shadow-lg rounded-xl p-8 border border-gray-200 hover:shadow transition-shadow duration-300">
+                <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-6 text-gray-800">Épreuve Finale</h2>
+                <p className="text-gray-700 text-center mb-4">
+                Les étudiants démontrent leurs compétences à travers des épreuves pratiques et théoriques.
+                </p>
+                <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>Réalisation d'un projet informatique en lien avec les certifications.</li>
+                <li>Présentation orale devant un jury professionnel.</li>
+                <li>Tests techniques pour valider les connaissances spécifiques.</li>
+                </ul>
+            </section>
 
-            <h2 className="text-2xl font-semibold mb-4">Exemples de Certifications</h2>
-            <p className="mb-4">Voici quelques exemples de certifications que les étudiants peuvent obtenir :</p>
-            <ul className="list-disc list-inside mb-6">
-            <li>Certification Cisco CCNA (réseaux informatiques).</li>
-            <li>Certification Microsoft (développement et administration).</li>
-            <li>Certification ITIL (gestion des services informatiques).</li>
-            <li>Certification en cybersécurité (type CEH ou équivalent).</li>
-            </ul>
+            <section className="bg-white shadow-lg rounded-xl p-8 border border-gray-200 hover:shadow transition-shadow duration-300">
+                <h2 className="text-2xl sm:text-3xl font-semibold text-center text-gray-800 mb-6">Exemples de Certifications</h2>
+                <p className="text-gray-700 text-center mb-4">
+                Quelques exemples de certifications accessibles aux étudiants :
+                </p>
+                <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>Certification Cisco CCNA (réseaux informatiques).</li>
+                <li>Certification Microsoft (développement et administration).</li>
+                <li>Certification ITIL (gestion des services informatiques).</li>
+                <li>Certification en cybersécurité (type CEH ou équivalent).</li>
+                </ul>
+            </section>
 
-            <p className="text-justify">
-            Ces certifications permettent aux diplômés du BTS SIO de se démarquer et de répondre aux attentes des recruteurs dans le domaine de l'informatique.
-            </p>
+            <section className="text-center">
+                <p className="text-gray-800 text-lg font-medium">
+                Ces certifications permettent aux diplômés du BTS SIO de se démarquer et de répondre aux attentes des recruteurs.
+                </p>
+            </section>
+            </main>
         </div>
     );
 };
