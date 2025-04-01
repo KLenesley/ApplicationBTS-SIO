@@ -7,9 +7,58 @@ export default function Home() {
       user = null;
   }
   return (
-    <div>
-      <h1>Bonjour {user},</h1>
-      <h2>Bienvenue sur le site des SIO</h2>
+    <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <header className="text-center">
+      <h1 className="text-4xl font-bold">Bonjour {user} !</h1>
+      <p className="text-lg text-gray-600 mt-2">
+        Bienvenue sur le site des SIO
+      </p>
+      </header>
+
+      <main className="w-full max-w-3xl">
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold mb-6 text-center">
+        Présentation du BTS SIO
+        </h2>
+        <p className="text-lg">
+        Le BTS SIO (Services Informatiques aux Organisations) est une
+        formation en informatique qui prépare les étudiants à devenir des
+        professionnels compétents dans le domaine des technologies de
+        l'information.
+        </p>
+      </section>
+      <section className="flex flex-col items-center gap-6">
+        <h2 className="text-2xl font-semibold mb-4 text-center">
+          Navigation
+        </h2>
+        <ul className="flex flex-col gap-4 text-center">
+          <li>
+        <a
+          href="/presentation"
+          className="rounded-full border border-solid border-black/[.05] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[gainsboro] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto"
+        >
+          Présentation du BTS SIO
+        </a>
+          </li>
+          <li>
+        <a
+          href="/quiz"
+          className="rounded-full border border-solid border-black/[.05] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[gainsboro] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto"
+        >
+          Quiz "Suis-je fait pour le BTS SIO ?"
+        </a>
+          </li>
+          <li>
+        <a
+          href="/specialites"
+          className="rounded-full border border-solid border-black/[.05] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[gainsboro] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto"
+        >
+          Découvrir les spécialités
+        </a>
+          </li>
+        </ul>
+      </section>
+      </main>
     </div>
     // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
     //   <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
