@@ -8,7 +8,7 @@ export default function Home() {
   }
   return (
     <div className="flex flex-col items-center justify-center flex-grow p-6 text-[#1E2A5E]">
-      <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 flex flex-col items-center w-96 h-86 transform transition-transform duration-300 hover:scale-105">
+      <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 flex flex-col items-center transform transition-transform duration-300 hover:scale-105 w-[33vw] h-[40vh]">
         <h1 className="text-3xl font-bold text-center mb-4">Bonjour {user},</h1>
         <p className="text-lg text-center mb-2">Bienvenue sur le site des BTS SIO</p>
         <p className="text-center mb-2">Créé par des élèves en BTS SIO pour les futurs BTS SIO</p>
