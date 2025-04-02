@@ -28,14 +28,14 @@ export default function Home() {
         </p>
       </section>
       <section className="bg-white shadow-lg rounded-xl p-8 border border-gray-200 mb-12 text-center hover:shadow transition-shadow duration-300">
-        <h2 className="text-2xl font-semibold mb-4 text-center">
+        <h2 className="text-2xl font-semibold mb-8 text-center">
           Navigation
         </h2>
-        <ul className="flex flex-col gap-4 text-center">
+        <ul className="flex flex-col gap-8 text-center">
           <li>
         <a
           href="/presentation"
-          className="rounded-md bg-gray-200 text-gray-800 font-medium text-sm sm:text-base py-2 px-4 sm:py-3 sm:px-6 shadow hover:bg-gray-300 transition-colors duration-300"
+          className="rounded-lg text-gray-800 font-medium text-base py-3 px-6 border border-gray-300 shadow-sm hover:bg-gray-100 hover:border-gray-400 transition-all duration-300 transform hover:scale-105"
         >
           Présentation du BTS SIO
         </a>
@@ -43,7 +43,7 @@ export default function Home() {
           <li>
         <a
           href="/quiz"
-          className="rounded-md bg-gray-200 text-gray-800 font-medium text-sm sm:text-base py-2 px-4 sm:py-3 sm:px-6 shadow hover:bg-gray-300 transition-colors duration-300"
+          className="rounded-lg text-gray-800 font-medium text-base py-3 px-6 border border-gray-300 shadow-sm hover:bg-gray-100 hover:border-gray-400 transition-all duration-300 transform hover:scale-105"
         >
           Quiz "Suis-je fait pour le BTS SIO ?"
         </a>
@@ -51,7 +51,7 @@ export default function Home() {
           <li>
         <a
           href="/specialites"
-          className="rounded-md bg-gray-200 text-gray-800 font-medium text-sm sm:text-base py-2 px-4 sm:py-3 sm:px-6 shadow hover:bg-gray-300 transition-colors duration-300"
+          className="rounded-lg text-gray-800 font-medium text-base py-3 px-6 border border-gray-300 shadow-sm hover:bg-gray-100 hover:border-gray-400 transition-all duration-300 transform hover:scale-105"
         >
           Découvrir les spécialités
         </a>

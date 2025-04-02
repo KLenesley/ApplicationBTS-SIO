@@ -12,7 +12,9 @@ export default function Head() {
             <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
                 <ul className="flex items-center space-x-8">
                     <li className="text-white font-medium hover:text-green-400 transition duration-300">
-                        <a href="/" className="block">Accueil</a>
+                        <a href="/" className="block">
+                            Accueil
+                        </a>
                     </li>
                     <li className="text-white font-medium hover:text-green-400 transition duration-300">
                         <a href="/specialites" className="block">Specialités</a>
@@ -42,7 +44,10 @@ export default function Head() {
                     </li>
                 </ul>
                 <div className="ml-auto">
-                    <a href={`/login?name=${user}`} className="px-5 py-2 bg-green-600 text-white font-medium rounded-full hover:bg-green-500 shadow-md transition duration-300">
+                    <a
+                        href={`/login?name=${user}`}
+                        className="px-4 py-2 border border-gray-300 text-gray-800 font-medium rounded-md hover:bg-gray-100 transition duration-200 bg-white"
+                    >
                         {user}
                     </a>
                 </div>

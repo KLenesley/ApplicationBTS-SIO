@@ -51,21 +51,31 @@ export default function RegisterPage() {
                     </div>
                     <button
                         type="submit"
-                        className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition-colors"
+                        className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition-colors cursor-pointer"
                     >
                         S'inscrire
                     </button>
                 </form>
+                <div className="mt-6 text-sm text-gray-600 text-center shadow-md rounded-lg p-4 border border-gray-200 bg-zinc-50 cursor-pointer hover:shadow transition-shadow duration-300">
+                    <p>
+                        Astuce : Pensez à enregistrer vos mots de passe dans un gestionnaire sécurisé comme{" "}
+                        <a href="https://bitwarden.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                            Bitwarden
+                        </a>{" "}
+                        ou un autre outil de gestion de mots de passe.
+                    </p>
+                </div>
             </main>
 
-            <footer className="text-center text-gray-500">
-                <p>
+            <div className="text-center text-gray-500
+            rounded-lg p-3 border border-gray-200 bg-zinc-50">
+                <p className="text-sm">
                     Vous avez déjà un compte ?{" "}
                     <a href="/login" className="text-blue-500 hover:underline">
                         Connectez-vous
                     </a>
                 </p>
-            </footer>
+            </div>
         </div>
     );
 }
