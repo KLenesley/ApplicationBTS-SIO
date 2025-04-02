@@ -1,5 +1,13 @@
 .Menu {
-    box-sizing: border-box;
-    padding: 15;
-    margin: 0;
+    padding: 25;
+    background-color: rgb(100, 100, 255);
+    color: white;
   }
+
+  .lien{
+    padding: 15;
+  }
+
+  
+    
+  
