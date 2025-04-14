@@ -1,0 +1,14 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import MdpOublie from './pages/MdpOublie';
+import Connexion from './pages/Connexion';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/forgot-password" element={<MdpOublie />} />
+        <Route path="/connexion" element={<Connexion />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
