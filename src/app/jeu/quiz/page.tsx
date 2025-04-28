@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 
+import { createClient } from '@supabase/supabase-js'
+
 const questions = [
     {
         question: "Aimez-vous résoudre des problèmes logiques ou techniques ?",
@@ -116,6 +118,12 @@ export default function Jeu() {
         else return "Aucune réponse donnée.";
     };
 
+
+    // Create a single supabase client for interacting with your database
+    const supabase = createClient('https://xyzcompany.supabase.co', 'public-anon-key')
+
+
+
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-200 via-white to-cyan-200">
             <div className="bg-white/80 backdrop-blur-lg shadow-xl rounded-lg p-8 w-full max-w-xl border border-gray-300 space-y-6">
@@ -134,8 +142,8 @@ export default function Jeu() {
                                     key={val}
                                     onClick={() => handleAnswer(idx, val)}
                                     className={`px-3 py-1 rounded-full text-white font-semibold transition ${answers[idx] === val
-                                            ? 'bg-blue-700 scale-105'
-                                            : 'bg-blue-400 hover:bg-blue-600'
+                                        ? 'bg-blue-700 scale-105'
+                                        : 'bg-blue-400 hover:bg-blue-600'
                                         }`}
                                 >
                                     {val}
