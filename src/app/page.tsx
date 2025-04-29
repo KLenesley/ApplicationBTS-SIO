@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Image
+      <Image
           className={styles.logo}
           src="/next.svg"
           alt="Next.js logo"
@@ -13,12 +13,7 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+       Pour avoir des informations sur le BTS.
 
         <div className={styles.ctas}>
           <a

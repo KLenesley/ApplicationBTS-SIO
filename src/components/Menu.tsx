@@ -7,6 +7,7 @@ export default function Menu() {
             <a href="http://localhost:3000/" className={styles.lien}>Accueil</a> 
             <a href="http://localhost:3000/specialites" className={styles.lien}>Spécialités</a> 
             <a href="http://localhost:3000/certifications" className={styles.lien}>Certification</a>
+            <a href="http://localhost:3000/jeu" className={styles.lien}>Jeu</a>
         </div>
     );
 
