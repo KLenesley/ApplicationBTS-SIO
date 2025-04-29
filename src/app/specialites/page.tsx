@@ -17,7 +17,7 @@ export default function Specialites() {
             Spécialités du BTS SIO
           </h1>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Découvrez les deux spécialités du BTS SIO : développement d'applications et gestion des systèmes et réseaux.
+            Découvrez les trois spécialités du BTS SIO : développement d'applications et gestion des systèmes et réseaux à choisir pour le second semestre, et cybersécurité.
           </p>
         </div>
 

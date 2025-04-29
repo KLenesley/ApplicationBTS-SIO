@@ -4,146 +4,41 @@ export default function Home() {
   const user = ""; // Tu peux brancher ça à une auth plus tard
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-slate-900 to-black text-white font-sans flex flex-col items-center justify-center px-6">
-  <main className="w-full max-w-6xl bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl shadow-2xl p-10 sm:p-16 flex flex-col gap-10 items-center text-center">
+    <div className="min-h-screen bg-gradient-to-br from-[#233554] via-[#334155] to-[#1e293b] text-white font-sans flex flex-col items-center justify-center px-6">
+      <main className="w-full max-w-5xl bg-white/5 backdrop-blur-lg border border-slate-700 rounded-3xl shadow-2xl p-8 sm:p-14 flex flex-col gap-10 items-center text-center">
+        {/* Logo + Accueil */}
+        <div className="flex flex-col items-center gap-4">
+          <Image
+            src="/logoNDLPFull.png"
+            alt="Logo NDLP Full"
+            width={220}
+            height={50}
+            className="drop-shadow-2xl"
+            priority
+          />
+          <h1 className="text-4xl sm:text-5xl font-bold text-cyan-300 drop-shadow-md">
+            Bonjour {user || "visiteur"},
+          </h1>
+          <p className="text-lg sm:text-xl text-slate-300 max-w-2xl leading-relaxed mt-2">
+            Bienvenue sur la page du <span className="text-cyan-400 font-semibold">BTS SIO</span>, une formation au cœur des métiers du numérique.
+          </p>
+        </div>
 
-    {/* Logo + Accueil */}
-    <div className="flex flex-col items-center gap-4">
-      <Image
-        src="/logoNDLPFull.png"
-        alt="Logo NDLP Full"
-        width={220}
-        height={50}
-        className="drop-shadow-xl"
-        priority
-      />
-      <h1 className="text-4xl sm:text-5xl font-bold text-violet-300 drop-shadow-md">
-        Bonjour {user || "visiteur"},
-      </h1>
-      <p className="text-lg sm:text-xl text-gray-300 max-w-2xl leading-relaxed mt-2">
-        Bienvenue sur la page du <span className="text-violet-400 font-semibold">BTS SIO</span>, une formation au cœur des métiers du numérique.
-      </p>
+        {/* Bloc centré "Qu'est-ce que le BTS SIO ?" */}
+        <div className="flex justify-center w-full">
+          <div className="bg-gradient-to-br from-[#334155]/80 to-[#233554]/80 border border-slate-700 rounded-2xl p-7 shadow-lg text-left hover:scale-[1.02] transition-transform w-full max-w-2xl">
+            <h2 className="text-2xl font-bold text-cyan-300 mb-4">Qu'est-ce que le BTS SIO ?</h2>
+            <p className="text-slate-200 leading-relaxed">
+              Le BTS SIO (Services Informatiques aux Organisations) est une formation de deux ans qui prépare les étudiants à devenir des professionnels compétents dans le domaine de l'informatique.
+            </p>
+          </div>
+        </div>
+        <div>
+          <a href="/presentation" className="px-10 py-4 bg-gradient-to-r from-cyan-600 to-blue-700 hover:from-cyan-700 hover:to-blue-800 text-white text-lg font-bold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 inline-block border border-cyan-800">
+            Découvrir la formation
+          </a>
+        </div>
+      </main>
     </div>
-
-    {/* Bloc centré "Qu'est-ce que le BTS SIO ?" */}
-    <div className="flex justify-center w-full">
-      <div className="bg-white/10 border border-white/20 rounded-2xl p-6 shadow-lg text-left hover:scale-[1.02] transition-transform w-full max-w-2xl">
-        <h2 className="text-2xl font-bold text-violet-300 mb-4">Qu'est-ce que le BTS SIO ?</h2>
-        <p className="text-gray-200 leading-relaxed">
-          Le BTS SIO (Services Informatiques aux Organisations) est une formation de deux ans qui prépare les étudiants à devenir des professionnels compétents dans le domaine de l'informatique.
-        </p>
-      </div>
-    </div>
-
-    {/* CTA */}
-    <div>
-      <a
-        href="/presentation"
-        className="px-10 py-4 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white text-lg font-bold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 inline-block"
-      >
-        Découvrir la formation
-      </a>
-    </div>
-
-  </main>
-</div>
-
-    // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-    //   <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-    //     <Image
-    //       className="dark:invert"
-    //       src="/next.svg"
-    //       alt="Next.js logo"
-    //       width={180}
-    //       height={38}
-    //       priority
-    //     />
-    //     <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-    //       <li className="mb-2 tracking-[-.01em]">
-    //         Get started by editing{" "}
-    //         <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-    //           src/app/page.tsx
-    //         </code>
-    //         .
-    //       </li>
-    //       <li className="tracking-[-.01em]">
-    //         Save and see your changes instantly.
-    //       </li>
-    //     </ol>
-
-    //     <div className="flex gap-4 items-center flex-col sm:flex-row">
-    //       <a
-    //         className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-    //         href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-    //         target="_blank"
-    //         rel="noopener noreferrer"
-    //       >
-    //         <Image
-    //           className="dark:invert"
-    //           src="/vercel.svg"
-    //           alt="Vercel logomark"
-    //           width={20}
-    //           height={20}
-    //         />
-    //         Deploy now
-    //       </a>
-    //       <a
-    //         className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-    //         href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-    //         target="_blank"
-    //         rel="noopener noreferrer"
-    //       >
-    //         Read our docs
-    //       </a>
-    //     </div>
-    //   </main>
-    //   <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-    //     <a
-    //       className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-    //       href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <Image
-    //         aria-hidden
-    //         src="/file.svg"
-    //         alt="File icon"
-    //         width={16}
-    //         height={16}
-    //       />
-    //       Learn
-    //     </a>
-    //     <a
-    //       className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-    //       href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <Image
-    //         aria-hidden
-    //         src="/window.svg"
-    //         alt="Window icon"
-    //         width={16}
-    //         height={16}
-    //       />
-    //       Examples
-    //     </a>
-    //     <a
-    //       className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-    //       href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <Image
-    //         aria-hidden
-    //         src="/globe.svg"
-    //         alt="Globe icon"
-    //         width={16}
-    //         height={16}
-    //       />
-    //       Go to nextjs.org →
-    //     </a>
-    //   </footer>
-    // </div>
   );
 }
