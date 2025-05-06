@@ -2,37 +2,68 @@ import React from 'react';
 
 export default function Prepa() {
   return (
-    <div className="p-12 bg-gradient-to-br from-gray-900 via-gray-950 to-black text-white rounded-3xl shadow-2xl space-y-12 border border-gray-800">
-      {/* Title */}
-      <h2 className="text-5xl font-extrabold text-red-700 drop-shadow-xl text-center tracking-tight">
-        La Prépa ISEN
-      </h2>
+    <div className="relative min-h-screen bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-700 text-gray-100 py-16 px-4 overflow-hidden font-sans text-center">
+      
+      {/* Effets décoratifs */}
+      <div className="absolute top-0 left-0 w-40 h-40 bg-red-700 rounded-full opacity-20 blur-2xl z-0" />
+      <div className="absolute bottom-10 right-10 w-56 h-56 bg-yellow-700 rounded-full opacity-30 blur-2xl z-0" />
 
-      {/* Introduction */}
-      <p className="text-gray-300 text-lg leading-relaxed text-justify max-w-4xl mx-auto">
-        La <span className="text-red-700 font-semibold">Prépa ISEN</span> est une formation complémentaire qui prépare les étudiants aux concours d'entrée à l'ISEN. Elle couvre des matières clés pour affronter les épreuves scientifiques, technologiques et humaines.
-      </p>
+      {/* Contenu principal */}
+      <div className="relative z-10 max-w-5xl mx-auto space-y-16">
 
-      {/* List of Subjects */}
-      <ul className="list-disc pl-8 space-y-4 text-gray-200 text-base leading-relaxed max-w-4xl mx-auto">
-        <li>
-          <strong className="text-red-700">Mathématiques</strong> : pour une compréhension approfondie des tâches complexes liées aux études d'ingénierie.
-        </li>
-        <li>
-          <strong className="text-red-700">Physique</strong> : pour une approche scientifique des technologies numériques et de l'électronique.
-        </li>
-        <li>
-          <strong className="text-red-700">Humanités</strong> : pour développer ses compétences en communication et réviser les règles de syntaxe française.
-        </li>
-        <li>
-          <strong className="text-red-700">Anglais</strong> : pour renforcer ses compétences dans un environnement international et technologique.
-        </li>
-      </ul>
+        {/* Titre principal */}
+        <div className="text-center space-y-3">
+          <h1 className="text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-pink-400 to-yellow-400 drop-shadow">
+            La Prépa ISEN
+          </h1>
+          <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            <span className="font-extrabold text-red-500">Prépa ISEN</span> : une formation d’excellence pour préparer les concours d’entrée à l’ISEN, couvrant les matières scientifiques, technologiques et humaines essentielles à votre réussite.
+          </p>
+        </div>
 
-      {/* Preparation Details */}
-      <p className="text-gray-300 text-lg leading-relaxed text-justify max-w-4xl mx-auto">
-        Les étudiants de la Prépa ISEN bénéficient d'une <span className="text-red-700 font-semibold">préparation intensive</span> pour intégrer une école d'ingénieur de l'ISEN, avec <span className="text-red-700 font-semibold">150 heures supplémentaires</span> intégrées dans l'emploi du temps du BTS.
-      </p>
+        {/* Matières */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="flex-1 bg-gray-800 border-2 border-red-900 rounded-xl shadow-xl hover:shadow-red-900 transition-all duration-300 hover:scale-105 p-7 text-center">
+            <h2 className="text-xl font-bold text-red-400 mb-3 flex items-center gap-2 justify-center">
+              <span>∑</span> Mathématiques
+            </h2>
+            <p className="text-gray-200 text-sm leading-relaxed">
+              Compréhension approfondie des concepts clés pour l’ingénierie.
+            </p>
+          </div>
+          <div className="flex-1 bg-gray-800 border-2 border-yellow-900 rounded-xl shadow-xl hover:shadow-yellow-900 transition-all duration-300 hover:scale-105 p-7 text-center">
+            <h2 className="text-xl font-bold text-yellow-400 mb-3 flex items-center gap-2 justify-center">
+              <span>⚡</span> Physique
+            </h2>
+            <p className="text-gray-200 text-sm leading-relaxed">
+              Approche scientifique des technologies numériques et électroniques.
+            </p>
+          </div>
+          <div className="flex-1 bg-gray-800 border-2 border-blue-900 rounded-xl shadow-xl hover:shadow-blue-900 transition-all duration-300 hover:scale-105 p-7 text-center">
+            <h2 className="text-xl font-bold text-blue-400 mb-3 flex items-center gap-2 justify-center">
+              <span>💬</span> Humanités
+            </h2>
+            <p className="text-gray-200 text-sm leading-relaxed">
+              Développement des compétences en communication et expression écrite.
+            </p>
+          </div>
+          <div className="flex-1 bg-gray-800 border-2 border-green-900 rounded-xl shadow-xl hover:shadow-green-900 transition-all duration-300 hover:scale-105 p-7 text-center">
+            <h2 className="text-xl font-bold text-green-400 mb-3 flex items-center gap-2 justify-center">
+              <span>🌍</span> Anglais
+            </h2>
+            <p className="text-gray-200 text-sm leading-relaxed">
+              Renforcement des compétences pour évoluer dans un contexte international.
+            </p>
+          </div>
+        </div>
+
+        {/* Préparation intensive */}
+        <div className="bg-gray-800 border-2 border-red-900 rounded-xl shadow-xl hover:shadow-pink-900 transition-all duration-300 hover:scale-105 p-7 text-center">
+          <p className="text-gray-200 text-sm leading-relaxed">
+            <span className="text-red-500 font-extrabold">Préparation intensive</span> : 150h supplémentaires intégrées au BTS pour maximiser vos chances d’intégrer l’ISEN.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

@@ -27,10 +27,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className="h-full">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Head/>     {/* Navbar */}
-        <main className="flex-grow flex flex-col">{children}</main>
-        <Foot/>     {/* Footer */}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
+        <Head /> {/* Navbar */}
+        <div className="mt-12 flex-grow flex flex-col">
+          <main>{children}</main>
+        </div>
+        <Foot /> {/* Footer */}
       </body>
     </html>
   );
