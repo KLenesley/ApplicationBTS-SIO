@@ -7,20 +7,19 @@ export default function Home() {
       <main className={styles.main}>
       <Image
           className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
+          src="/ndlp.png"
+          alt="NDLP"
           width={180}
-          height={38}
+          height={180}
           priority
         />
-       Pour avoir des informations sur le BTS.
+        <h2>Bienvenue</h2>
+       Pour avoir des informations sur le BTS SIO.
 
         <div className={styles.ctas}>
           <a
             className={styles.primary}
-            //href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            href="http://localhost:3000/specialites"
-            //target="_blank"
+            href="http://localhost:3000/presentation"
             rel="noopener noreferrer"
           >
             <Image
@@ -30,16 +29,14 @@ export default function Home() {
               width={20}
               height={20}
             />
-            Spécialités
+            Présentation
           </a>
           <a
-            //href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            href="http://localhost:3000/certifications"
-            //target="_blank"
+            href="http://localhost:3000/specialites"
             rel="noopener noreferrer"
             className={styles.secondary}
           >
-            Certifications
+            Spécialités
           </a>
         </div>
       </main>

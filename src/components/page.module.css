@@ -1,17 +1,18 @@
 .Menu {
-    padding: 25;
-    background-color: rgb(100, 100, 255);
-    color: white;
-  }
+  padding: 25;
+  background-color: rgb(100, 100, 255);
+  color: white;
+}
 
-  .Footer {
-    padding: 25;
-    background-color: rgb(100, 100, 255);
-  }
+.Footer {
+  padding-top: 50;
+  background-color: rgb(100, 100, 255);
+  color: white;
+}
 
-  .lien{
-    padding: 15;
-  }
+.lien{
+  padding: 15;
+}
 
   
     
