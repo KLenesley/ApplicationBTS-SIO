@@ -14,7 +14,7 @@ export default function Home() {
           priority
         />
         <h2>Bienvenue</h2>
-       Pour avoir des informations sur le BTS SIO.
+       Pour avoir des informations sur le BTS SIO ou faire un quiz pour savoir si tu es fait pour le BTS SIO.
 
         <div className={styles.ctas}>
           <a
@@ -32,17 +32,17 @@ export default function Home() {
             Présentation
           </a>
           <a
-            href="http://localhost:3000/specialites"
+            href="http://localhost:3000/quiz"
             rel="noopener noreferrer"
             className={styles.secondary}
           >
-            Spécialités
+            Quiz
           </a>
         </div>
       </main>
       <footer className={styles.footer}>
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="http://localhost:3000/specialites"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -53,10 +53,10 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Learn
+          Les spécialités
         </a>
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="http://localhost:3000/prepa"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -67,10 +67,10 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Examples
+          La prépa
         </a>
         <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="http://localhost:3000/certifications"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -81,7 +81,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Go to nextjs.org →
+          Les certifications
         </a>
       </footer>
     </div>
