@@ -22,7 +22,7 @@ export default function Head() {
                 <nav className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
                     {/* Logo */}
                     <a
-                        href="https://ndlpavranches.fr/lycee/"
+                        href="/"
                         className="flex items-center gap-3 text-gray-900 hover:opacity-90 transition-opacity"
                     >
                         <img src="/NDLP_logo.png" alt="Logo NDLP" className="h-10 w-auto drop-shadow-lg" />
