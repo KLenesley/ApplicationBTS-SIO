@@ -10,10 +10,9 @@ export default function QuizClient({ quiz_questions, quiz_answers }) {
     next.preventDefault();
     const formData = new FormData(next.target);
     const selectedAnswer = formData.get(`question_${quiz_questions[currentQuestionIndex].id}`);
-    setUserAnswers((prevAnswers) => ({
-      ...prevAnswers,
-      [quiz_questions[currentQuestionIndex].id]: selectedAnswer,
-    }));
+    const selectedAnswerWeight = quiz_answers.find((answer) => answer.question_id === quiz_questions[currentQuestionIndex].id && answer.answer === selectedAnswer).answerF;
+
+    setUserAnswers((prevAnswers) => ({ ...prevAnswers, [quiz_questions[currentQuestionIndex].id]: { answer: selectedAnswer, weight: selectedAnswerWeight, }, }));
     setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
   };
 
@@ -36,7 +35,7 @@ export default function QuizClient({ quiz_questions, quiz_answers }) {
                   {quiz_answers.filter(answer => answer.question_id === question.id).map((answer, answerIndex) => (
                     <div key={answerIndex} className="flex items-center space-x-3">
                       <input type="radio" name={`question_${question.id}`} value={answer.answer} required className="form-radio text-purple-500 focus:ring-purple-400"/>
-                      <label className="text-gray-300">{answer.answer}</label>
+                      <label className="text-gray-300"> {answer.answer} </label>
                     </div>
                   ))}
                   <button type="submit" className="mt-6 px-5 py-2 bg-purple-600 text-white font-medium rounded-lg hover:bg-purple-700 transition">
@@ -54,7 +53,8 @@ export default function QuizClient({ quiz_questions, quiz_answers }) {
                 {quiz_questions.map((question) => (
                   <li key={question.id}>
                     <h3 className="font-semibold">{question.question}</h3>
-                    <p className="text-gray-300">Votre réponse : {userAnswers[question.id]}</p>
+                    <p className="text-gray-300">Votre réponse : {userAnswers[question.id].answer}</p>
+                    <p className="text-gray-300">Poids de la réponse : {userAnswers[question.id].weight}</p>
                   </li>
                 ))}
               </ul>
