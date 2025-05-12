@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Specialites() {
   return (
-    <div className="relative min-h-screen bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-700 text-gray-100 py-16 px-4 overflow-hidden font-sans text-center">
+    <div className="relative min-h-screen bg-gradient-to-tr from-[#233554] via-[#334155] to-[#1e293b] text-slate-200 py-16 px-4 overflow-hidden font-sans text-center">
 
       {/* Effets décoratifs */}
       <div className="absolute top-0 left-0 w-40 h-40 bg-pink-700 rounded-full opacity-20 blur-2xl z-0" />

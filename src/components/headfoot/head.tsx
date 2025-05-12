@@ -5,14 +5,12 @@ import React, { useState } from 'react';
 export default function Head() {
     const [menuOpen, setMenuOpen] = useState(false);
     const user = ""; // Remplacer par une vraie logique d'authentification si besoin
-    const userLabel = user ? user : "Connexion";
 
     const navLinks = [
         ['Accueil', '/'],
         ['Présentation', '/presentation'],
         ['Spécialités', '/specialites'],
         ['Prépa ISEN', '/prepa'],
-        ['Certifications', '/certifications'],
         ['Jeu', '/jeu'],
     ];
 
@@ -42,28 +40,6 @@ export default function Head() {
                         ))}
                     </ul>
 
-                    {/* Connexion button */}
-                    <div className="hidden md:flex items-center">
-                        <a
-                            href={`/user?name=${encodeURIComponent(userLabel)}`}
-                            className="bg-gradient-to-r from-blue-500 to-blue-400 hover:from-blue-600 hover:to-blue-500 text-white font-bold px-6 py-2 rounded-xl shadow-lg transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-blue-300"
-                        >
-                            {userLabel}
-                        </a>
-                    </div>
-
-                    {/* Hamburger menu button (mobile) */}
-                    <button
-                        onClick={() => setMenuOpen(!menuOpen)}
-                        className="md:hidden text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-300 ml-2"
-                        aria-label={menuOpen ? "Fermer le menu" : "Ouvrir le menu"}
-                        aria-expanded={menuOpen}
-                        aria-controls="mobile-menu"
-                    >
-                        <svg className="w-9 h-9" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 8h16M4 16h16"} />
-                        </svg>
-                    </button>
                 </nav>
 
                 {/* Mobile menu */}
@@ -84,15 +60,7 @@ export default function Head() {
                                 </a>
                             </li>
                         ))}
-                        <li>
-                            <a
-                                href={`/user?name=${encodeURIComponent(userLabel)}`}
-                                className="block bg-gradient-to-r from-green-500 to-green-400 hover:from-green-600 hover:to-green-500 text-white font-bold px-4 py-2 rounded-xl shadow-lg transition-all duration-150 mt-2 focus:outline-none focus:ring-2 focus:ring-green-300"
-                                onClick={() => setMenuOpen(false)}
-                            >
-                                {userLabel}
-                            </a>
-                        </li>
+                             
                     </ul>
                 </div>
             </header>
