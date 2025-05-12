@@ -5,6 +5,11 @@ import { useState } from 'react';
 export default function QuizClient({ quiz_questions, quiz_answers }) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState({});
+  let answerWeights = [];
+  let numberOfQuestions = quiz_questions.length;
+  let finalScore = null;
+  let maxWeight = 4;
+  let maxScore = numberOfQuestions * maxWeight;
 
   const handleNextQuestion = (next) => {
     next.preventDefault();
@@ -32,21 +37,27 @@ export default function QuizClient({ quiz_questions, quiz_answers }) {
                 <form onSubmit={handleNextQuestion} className="space-y-6">
                   <input type="hidden" name="id" value={question.id} />
                   <h2 className="text-xl font-bold">{index + 1}. {question.question}</h2>
-                  {quiz_answers.filter(answer => answer.question_id === question.id).map((answer, answerIndex) => (
-                    <div key={answerIndex} className="flex items-center space-x-3">
-                      <input type="radio" name={`question_${question.id}`} value={answer.answer} required className="form-radio text-purple-500 focus:ring-purple-400"/>
-                      <label className="text-gray-300"> {answer.answer} </label>
-                    </div>
-                  ))}
-                  <button type="submit" className="mt-6 px-5 py-2 bg-purple-600 text-white font-medium rounded-lg hover:bg-purple-700 transition">
-                    Suivant
-                  </button>
+                  {quiz_answers.filter((answer) => answer.question_id === question.id).map((answer, answerIndex) => (
+                      <button key={answerIndex} type="button" onClick={() => {
+                          const selectedAnswerWeight = quiz_answers.find((a) => a.question_id === question.id && a.answer === answer.answer).answerF;
+
+                          setUserAnswers((prevAnswers) => ({...prevAnswers, [question.id]: { answer: answer.answer, weight: selectedAnswerWeight }, }));
+
+                          setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
+                        }}
+                        className={`w-full p-4 text-left rounded-lg border ${ userAnswers[question.id]?.answer === answer.answer ? "bg-purple-600 text-white" : "bg-gray-700 text-gray-300" } hover:bg-purple-500 transition`} >
+                        {answer.answer}
+                      </button>
+                    ))}
                 </form>
               </div>
             )
           ));
 
         } else {
+          answerWeights = Object.values(userAnswers).reduce((sum, answer) => sum + answer.weight, 0);
+          finalScore = Math.round(((answerWeights / maxScore) * 100) * 100) / 100;
+
           return (
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
               <h2 className="text-2xl font-bold mb-4">Vos réponses</h2>
@@ -54,12 +65,15 @@ export default function QuizClient({ quiz_questions, quiz_answers }) {
                 {quiz_questions.map((question) => (
                   <li key={question.id}>
                     <h3 className="font-semibold">{question.question}</h3>
-                    <p className="text-gray-300">Votre réponse : {userAnswers[question.id].answer}</p>
-                    <p className="text-gray-300">Poids de la réponse : {userAnswers[question.id].weight}</p>
+                    <p className="text-gray-300">Votre réponse : {userAnswers[question.id]?.answer}</p>
+                    <p className="text-gray-300">Poids de la réponse : {userAnswers[question.id]?.weight}</p> {/* Temp, to be removed */}
                   </li>
                 ))}
               </ul>
-              
+
+              <h2 className="text-2xl font-bold mt-6">Résultat</h2>
+              <p className="text-gray-300">Votre score : {finalScore} %</p>
+
               <button onClick={handleRestart} className="mt-6 px-5 py-2 bg-purple-600 text-white font-medium rounded-lg hover:bg-purple-700 transition">
                 Recommencer
               </button>
