@@ -43,7 +43,6 @@ export default function Home() {
       <footer className={styles.footer}>
         <a
           href="http://localhost:3000/specialites"
-          target="_blank"
           rel="noopener noreferrer"
         >
           <Image
@@ -57,7 +56,6 @@ export default function Home() {
         </a>
         <a
           href="http://localhost:3000/prepa"
-          target="_blank"
           rel="noopener noreferrer"
         >
           <Image
@@ -71,7 +69,6 @@ export default function Home() {
         </a>
         <a
           href="http://localhost:3000/certifications"
-          target="_blank"
           rel="noopener noreferrer"
         >
           <Image
