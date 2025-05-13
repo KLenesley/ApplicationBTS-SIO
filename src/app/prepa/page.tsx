@@ -23,32 +23,32 @@ export default function Prepa() {
 
         {/* Matières */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="flex-1 bg-[#334155] border border-cyan-700 rounded-xl shadow-xl hover:shadow-cyan-700 transition-all duration-300 hover:scale-105 p-7 text-center">
-            <h2 className="text-xl font-bold text-cyan-300 mb-3 flex items-center gap-2 justify-center">
+          <div className="flex-1 bg-[#334155] border border-red-700 rounded-xl shadow-xl hover:shadow-red-700 transition-all duration-300 hover:scale-105 p-7 text-center">
+            <h2 className="text-xl font-bold text-red-300 mb-3 flex items-center gap-2 justify-center">
               <span>∑</span> Mathématiques
             </h2>
             <p className="text-slate-200 text-sm leading-relaxed">
               Compréhension approfondie et complexes des concepts comme les exponentiels, logarithmes et probabilités.
             </p>
           </div>
-          <div className="flex-1 bg-[#334155] border border-blue-700 rounded-xl shadow-xl hover:shadow-blue-700 transition-all duration-300 hover:scale-105 p-7 text-center">
-            <h2 className="text-xl font-bold text-blue-300 mb-3 flex items-center gap-2 justify-center">
+          <div className="flex-1 bg-[#334155] border border-indigo-700 rounded-xl shadow-xl hover:shadow-indigo-700 transition-all duration-300 hover:scale-105 p-7 text-center">
+            <h2 className="text-xl font-bold text-indigo-300 mb-3 flex items-center gap-2 justify-center">
               <span>⚡</span> Physique
             </h2>
             <p className="text-slate-200 text-sm leading-relaxed">
               Branche plus scientifique abordant le thème de l'électrocinétique.
             </p>
           </div>
-          <div className="flex-1 bg-[#334155] border border-green-700 rounded-xl shadow-xl hover:shadow-green-700 transition-all duration-300 hover:scale-105 p-7 text-center">
-            <h2 className="text-xl font-bold text-green-300 mb-3 flex items-center gap-2 justify-center">
+          <div className="flex-1 bg-[#334155] border border-gray-700 rounded-xl shadow-xl hover:shadow-gray-700 transition-all duration-300 hover:scale-105 p-7 text-center">
+            <h2 className="text-xl font-bold text-gray-300 mb-3 flex items-center gap-2 justify-center">
               <span>💬</span> Humanités
             </h2>
             <p className="text-slate-200 text-sm leading-relaxed">
               Développement des compétences en communication orale afin de débattre sur un sujet et révision de la syntaxe française afin d'avoir une certification.
             </p>
           </div>
-          <div className="flex-1 bg-[#334155] border border-yellow-700 rounded-xl shadow-xl hover:shadow-yellow-700 transition-all duration-300 hover:scale-105 p-7 text-center">
-            <h2 className="text-xl font-bold text-yellow-300 mb-3 flex items-center gap-2 justify-center">
+          <div className="flex-1 bg-[#334155] border border-green-700 rounded-xl shadow-xl hover:shadow-green-700 transition-all duration-300 hover:scale-105 p-7 text-center">
+            <h2 className="text-xl font-bold text-green-300 mb-3 flex items-center gap-2 justify-center">
               <span>🌍</span> Anglais
             </h2>
             <p className="text-slate-200 text-sm leading-relaxed">

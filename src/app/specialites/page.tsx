@@ -32,12 +32,13 @@ export default function Specialites() {
             <p className="text-slate-200 text-sm leading-relaxed mb-2">
               La spécialité SISR se concentre sur l’administration des systèmes et réseaux d’entreprise. Les étudiants travailleront sur des consoles virtuelles et apprendront à :
             </p>
-            <ul className="mt-2 grid grid-cols-2 gap-1 text-cyan-300 text-sm font-medium list-disc list-inside pl-2">
-              <li>Gérer des machines virtuelles</li>
-              <li>Configurer des serveurs</li>
-              <li>Superviser des réseaux</li>
-              <li>Utiliser le cloud computing</li>
-            </ul>
+            <div className="grid grid-cols-2 gap-x-6 gap-y-1 items-start mt-2 text-cyan-300 text-sm font-medium text-left">
+              <div className="flex items-center gap-2"><span className="text-cyan-400">•</span> Gérer des machines virtuelles</div>
+              <div className="flex items-center gap-2"><span className="text-cyan-400">•</span> Configurer des serveurs</div>
+              <div className="flex items-center gap-2"><span className="text-cyan-400">•</span> Superviser des réseaux</div>
+              <div className="flex items-center gap-2"><span className="text-cyan-400">•</span> Utiliser le cloud computing</div>
+              <div className="flex items-center gap-2"><span className="text-cyan-400">•</span> Gérer les infra-réseaux</div>
+            </div>
           </div>
         
           {/* SLAM */}
@@ -48,36 +49,36 @@ export default function Specialites() {
             <p className="text-slate-200 text-sm leading-relaxed mb-2">
               La spécialité SLAM met l'accent sur le développement de logiciels métiers et la manipulation des bases de données. Langages enseignés :
             </p>
-            <ul className="mt-2 grid grid-cols-2 sm:grid-cols-3 gap-1 text-blue-300 text-sm font-medium list-disc list-inside pl-2">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>PHP</li>
-              <li>Python</li>
-              <li>C#</li>
-              <li>SQL</li>
-            </ul>
+            <div className="grid grid-cols-2 gap-x-6 gap-y-1 items-start mt-2 text-blue-300 text-sm font-medium text-left">
+              <div className="flex items-center gap-2"><span className="text-blue-400">•</span> HTML</div>
+              <div className="flex items-center gap-2"><span className="text-blue-400">•</span> CSS</div>
+              <div className="flex items-center gap-2"><span className="text-blue-400">•</span> JavaScript</div>
+              <div className="flex items-center gap-2"><span className="text-blue-400">•</span> PHP</div>
+              <div className="flex items-center gap-2"><span className="text-blue-400">•</span> Python</div>
+              <div className="flex items-center gap-2"><span className="text-blue-400">•</span> C#</div>
+              <div className="flex items-center gap-2"><span className="text-blue-400">•</span> SQL</div>
+            </div>
           </div>
         </div>
 
         {/* Cybersécurité */}
         <div className="flex-1 bg-[#334155] border-2 border-indigo-900 rounded-xl shadow-xl hover:shadow-indigo-900 transition-all duration-300 hover:scale-105 p-7 text-center">
-            <h2 className="text-xl font-bold text-indigo-400 mb-3 flex items-center gap-2 justify-center">
-              <span>🛡️</span> Cybersécurité
-            </h2>
-            <p className="text-gray-200 text-sm leading-relaxed mb-2">
-              La spécialité cybersécurité forme les étudiants à la protection des systèmes informatiques contre les menaces et attaques.
-            </p>
-            <p className="text-gray-200 text-sm leading-relaxed mb-2">
-              Sécurisez les réseaux, détectez les vulnérabilités et protégez les données sensibles.
-            </p>
-            <p className="text-gray-200 text-sm leading-relaxed">
-              Entraînez-vous à la cybersécurité avec :&nbsp;
-              <a href="https://joligo.fr/" target="_blank" rel="noopener noreferrer" className="text-indigo-400 underline hover:text-blue-600 transition">
-                Joligo
-              </a>.
-            </p>
-          </div>
+          <h2 className="text-xl font-bold text-indigo-400 mb-3 flex items-center gap-2 justify-center">
+            <span>🛡️</span> Cybersécurité
+          </h2>
+          <p className="text-gray-200 text-sm leading-relaxed mb-2">
+            La spécialité cybersécurité forme les étudiants à la protection des systèmes informatiques contre les menaces et attaques.
+          </p>
+          <p className="text-gray-200 text-sm leading-relaxed mb-2">
+            Sécurisez les réseaux, détectez les vulnérabilités et protégez les données sensibles.
+          </p>
+          <p className="text-gray-200 text-sm leading-relaxed">
+            Entraînez-vous à la cybersécurité avec :&nbsp;
+            <a href="https://joligo.fr/" target="_blank" rel="noopener noreferrer" className="text-indigo-400 underline hover:text-blue-600 transition">
+              Joligo
+            </a>.
+          </p>
+        </div>
       </div>
     </div>
   );
