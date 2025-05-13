@@ -1,7 +1,7 @@
 export default function Presentation() {
 
     return (
-        <div>
+        <div className="div">
             <h1>Présentation</h1>
             Les matières du BTS SIO sont :
             <div>

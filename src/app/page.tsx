@@ -40,7 +40,7 @@ export default function Home() {
           </a>
         </div>
       </main>
-      <footer className={styles.footer}>
+        <footer className={styles.footer}>
         <a
           href="http://localhost:3000/specialites"
           rel="noopener noreferrer"
