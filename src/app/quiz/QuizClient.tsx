@@ -45,7 +45,7 @@ export default function QuizClient({ quiz_questions, quiz_answers }) {
 
                           setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
                         }}
-                        className={`w-full p-4 text-left rounded-lg border ${ userAnswers[question.id]?.answer === answer.answer ? "bg-purple-600 text-white" : "bg-gray-700 text-gray-300" } hover:bg-purple-500 transition`} >
+                        className={`flex w-1/3 p-4 text-center rounded-lg border justify-center items-center ${ userAnswers[question.id]?.answer === answer.answer ? "bg-purple-600 text-white" : "bg-gray-700 text-gray-300" } hover:bg-purple-500 transition`} >
                         {answer.answer}
                       </button>
                     ))}
@@ -63,7 +63,7 @@ export default function QuizClient({ quiz_questions, quiz_answers }) {
               <h2 className="text-2xl font-bold mb-4">Vos réponses</h2>
               <ul className="space-y-4">
                 {quiz_questions.map((question) => (
-                  <li key={question.id}>
+                  <li key={question.id} className="bg-gray-700 rounded-lg p-4 shadow border border-gray-600">
                     <h3 className="font-semibold">{question.question}</h3>
                     <p className="text-gray-300">Votre réponse : {userAnswers[question.id]?.answer}</p>
                     <p className="text-gray-300">Poids de la réponse : {userAnswers[question.id]?.weight}</p> {/* Temp, to be removed */}
