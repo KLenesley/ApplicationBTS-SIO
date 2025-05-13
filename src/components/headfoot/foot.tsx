@@ -1,20 +1,18 @@
 export default function Foot() {
     return (
-        <footer className="bg-cyan-950 text-white py-12 mt-auto w-full shadow-md border-t border-cyan-800">
-            <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 gap-8">
-                    <div className="flex flex-wrap gap-6 justify-center items-center">
+        <footer className="bg-gradient-to-r from-gray-500 via-gray-500 to-gray-500 text-white py-10 mt-auto w-full shadow-2xl border-t border-gray-300">
+            <div className="w-full max-w-5xl mx-auto px-6">
+                <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
+                    <div className="flex gap-6">
                         <a
-                            href="/contact"
-                            className="px-8 py-3 rounded-lg bg-cyan-800 text-white font-semibold tracking-wide shadow 
-                            hover:bg-cyan-700 transition-all duration-300 ease-out border border-cyan-700"
+                            href="https://ndlpavranches.fr/contact/"
+                            className="px-8 py-3 rounded-full bg-gradient-to-r from-cyan-600 to-blue-700 hover:from-cyan-700 hover:to-blue-800 text-white font-semibold shadow-lg border border-cyan-800 transition-all duration-300 transform hover:scale-105"
                         >
                             Contact
                         </a>
                         <a
                             href="/mentions"
-                            className="px-8 py-3 rounded-lg bg-cyan-800 text-white font-semibold tracking-wide shadow 
-                            hover:bg-cyan-700 transition-all duration-300 ease-out border border-cyan-700"
+                            className="px-8 py-3 rounded-full bg-gradient-to-r from-cyan-600 to-blue-700 hover:from-cyan-700 hover:to-blue-800 text-white font-semibold shadow-lg border border-cyan-800 transition-all duration-300 transform hover:scale-105"
                         >
                             Mentions légales
                         </a>

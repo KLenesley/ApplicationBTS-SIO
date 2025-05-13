@@ -52,7 +52,7 @@ export default function Prepa() {
               <span>🌍</span> Anglais
             </h2>
             <p className="text-slate-200 text-sm leading-relaxed">
-              Renforcement des compétences pour évoluer dans un contexte international.
+              Renforcement des compétences pour évoluer en anglais à l'oral dans un contexte international.
             </p>
           </div>
         </div>
@@ -60,7 +60,7 @@ export default function Prepa() {
         {/* Préparation intensive */}
         <div className="bg-[#334155] border border-cyan-700 rounded-xl shadow-xl hover:shadow-cyan-700 transition-all duration-300 hover:scale-105 p-7 text-center">
           <p className="text-slate-200 text-sm leading-relaxed">
-            <span className="text-cyan-400 font-extrabold">Préparation intensive</span> : 150h supplémentaires intégrées au BTS pour maximiser vos chances d’intégrer l’ISEN avec 800€ l'année.
+            <span className="text-cyan-400 font-extrabold">Préparation intensive</span> : 150h supplémentaires intégrées au BTS pour maximiser vos chances d’intégrer l’ISEN avec 800€ par semestre.
           </p>
         </div>
       </div>
