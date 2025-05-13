@@ -3,7 +3,7 @@ Application pour faire connaître le BTS SIO
 
 Voici la page de présentation du projet de 4 étudiants en BTS SIO option SLAM au lycée Notre-Dame de La Providence à Avranches.
 
-Le site (*qui deviendra peut-être une application ensuite*) sera disponible à l'adresse https://sio.ndlpavranches.fr.
+Le site sera disponible à l'adresse [sio.ndlpavranches.fr](https://sio.ndlpavranches.fr).
 
 ### Liste des étudiants :
 - [@KLenesley](https://github.com/KLenesley)
@@ -14,17 +14,7 @@ Le site (*qui deviendra peut-être une application ensuite*) sera disponible à 
 ## Avancée des tâches
 Vous pouvez suivre l'avancée du projet [sur cette page](https://github.com/users/KLenesley/projects/1).
 
-## Idée de design (proposé par [@adriendeval](https://github.com/adriendeval))
-Pour voir un aperçu du site, <a href="https://adriendeval.github.io/ApplicationBTS-SIO/" target="_blank">cliquez ici</a>.
-
-> [!NOTE]
-> Le design n'est qu'une ébauche temporaire et sera très certainement remplacé à l'avenir.
-
-> Palette de couleurs utilisée (peut être modifiée si besoin) : https://www.colorhunt.co/palette/7c93c355679c1e2a5ee1d7b7
-
 ## Fonctionnalités principales
-- Un site Web responsive, voire une application mobile ?
-- Créer des pages de présentation de ce BTS, en insistant sur ses spécificités.
-- Permettre la saisie de témoignages d'anciens étudiants (avec TinyMCE ?).
-- Créer un petit flyer, au format A5, avec un QR Code pour facilité l'accès à l'application.
-- Créer un petit jeu (par exemple "Suis je fais pour réussir en BTS SIO ?") pour rendre l'application ludique.
+- Un site Web responsive servant à présenter le BTS SIO ainsi que ses options.
+- Quiz "Suis-je fais pour le BTS SIO ?" contenant des questions diverses et renvoyant un score sur 100.
+- Page consacrée à la Prépa ISEN pour les étudiants intéressés à poursuivre leurs études après le BTS.
