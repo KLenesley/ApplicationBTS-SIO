@@ -6,19 +6,19 @@ export default function Foot() {
                     <div className="flex gap-6">
                         <a
                             href="https://ndlpavranches.fr/contact/"
-                            className="px-8 py-3 rounded-full bg-gray-700 hover:bg-cyan-600 text-white font-semibold shadow-lg border border-cyan-700 transition-all duration-300 transform hover:scale-105"
+                            className="px-8 py-3 rounded-full bg-gray-700 hover:bg-indigo-600 text-white font-semibold shadow-lg border border-indigo-700 transition-all duration-300 transform hover:scale-105"
                         >
                             Contact
                         </a>
                         <a
                             href="/mentions"
-                            className="px-8 py-3 rounded-full bg-gray-700 hover:bg-cyan-600 text-white font-semibold shadow-lg border border-cyan-700 transition-all duration-300 transform hover:scale-105"
+                            className="px-8 py-3 rounded-full bg-gray-700 hover:bg-indigo-600 text-white font-semibold shadow-lg border border-indigo-700 transition-all duration-300 transform hover:scale-105"
                         >
                             Mentions légales
                         </a>
                     </div>
                     <div className="text-center">
-                        <p className="text-cyan-300 text-sm tracking-wider font-light">
+                        <p className="text-indigo-300 text-sm tracking-wider font-light">
                             © 2025 - Tous droits réservés
                         </p>
                     </div>

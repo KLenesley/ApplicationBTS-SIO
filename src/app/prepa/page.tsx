@@ -17,7 +17,7 @@ export default function Prepa() {
             La Prépa ISEN
           </h1>
           <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            <span className="font-extrabold text-cyan-400">Prépa ISEN</span> : une option pour préparer les concours d’entrée à l’ISEN, couvrant les matières scientifiques, technologiques et humaines essentielles à votre réussite.
+            Une option pour préparer les concours d’entrée à l’ISEN, couvrant les matières scientifiques, technologiques et humaines essentielles à votre réussite.
           </p>
         </div>
 
@@ -39,7 +39,7 @@ export default function Prepa() {
               Branche plus scientifique abordant le thème de l'électrocinétique.
             </p>
           </div>
-          <div className="flex-1 bg-[#334155] border border-gray-700 rounded-xl shadow-xl hover:shadow-gray-700 transition-all duration-300 hover:scale-105 p-7 text-center">
+          <div className="flex-1 bg-[#334155] border border-black-700 rounded-xl shadow-xl hover:shadow-gray-700 transition-all duration-300 hover:scale-105 p-7 text-center">
             <h2 className="text-xl font-bold text-gray-300 mb-3 flex items-center gap-2 justify-center">
               <span>💬</span> Humanités
             </h2>

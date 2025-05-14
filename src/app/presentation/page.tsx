@@ -31,7 +31,7 @@ export default function Presentation() {
               </h2>
               <div className="flex flex-col items-center">
                 <p className="text-cyan-200 text-base leading-relaxed mb-4 flex-grow w-full h-full text-justify">
-                  Les étudiants se formeront aux bases de l'informatique : <span className="font-bold">programmation</span>, <span className="font-bold">réseaux</span> et <span className="font-bold">cybersécurité</span>.
+                  Les étudiants se formeront aux bases de l'informatique : <span className="font-bold">programmation</span>, <span className="font-bold">réseaux</span> et <span className="font-bold">cybersécurité</span> avec du travail à rendre.
                   Chaque étudiant se spécialise dans l'une des deux spécialités au second semestre, tandis que la cybersécurité est enseignée à tous.
                 </p>
                 <a
