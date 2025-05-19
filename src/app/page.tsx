@@ -34,7 +34,7 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <a href="/presentation" className="px-10 py-4 bg-gradient-to-r from-cyan-600 to-blue-700 hover:from-cyan-700 hover:to-blue-800 text-white text-lg font-bold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 inline-block border border-cyan-800">
+          <a href="/presentation" className="px-10 py-4 bg-cyan-600 to-blue-700 hover:from-cyan-700 hover:to-blue-800 text-white text-lg font-bold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 inline-block border border-cyan-800">
             Découvrir la formation
           </a>
         </div>

@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Titre de la page",
+  title: "Application BTS SIO",
   description: "Description de la page",
 };
 

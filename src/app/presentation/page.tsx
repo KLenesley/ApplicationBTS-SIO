@@ -97,7 +97,6 @@ export default function Presentation() {
               </p>
               <ul className="mt-2 grid grid-cols-1 gap-2 text-sky-300 text-base font-medium list-disc list-inside pl-2 text-left w-full">
                 <li><span className="font-bold">Journée des BTS</span> – journée exclusive aux étudiants du lycée afin de créer des liens.</li>
-                <li><span className="font-bold">LAN</span> – journée e-sport festive avant Noël afin de passer un bon moment entre étudiant SIO.</li>
                 <li><span className="font-bold">Forum de l'orientation</span> – présentation du BTS SIO aux élèves.</li>
                 <li><span className="font-bold">Stage</span> – 10 semaines de stages sur 2 ans. 5 en première année, 5 dans la deuxième</li>
               </ul>
