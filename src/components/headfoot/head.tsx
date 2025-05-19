@@ -40,7 +40,7 @@ export default function Head() {
                         ))}
                     </ul>
                     <button
-                        className="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded focus:outline-none focus:ring-2 focus:ring-blue-300"
+                        className={"md:hidden flex flex-col justify-center items-center w-10 h-10 rounded focus:outline-none focus:ring-2 focus:ring-blue-300"}
                         aria-label="Ouvrir le menu"
                         aria-expanded={menuOpen}
                         onClick={() => setMenuOpen((open) => !open)}
