@@ -1,6 +1,6 @@
 import { createClient } from '@supabase/supabase-js'
-const supabaseUrl = 'https://hzfqkprivorhqpoueytc.supabase.co'
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOi'
+const supabaseUrl = 
+const supabaseKey = 
 const supabase = createClient(supabaseUrl, supabaseKey)
 
 let { data: quiz_questions, error } = await supabase
