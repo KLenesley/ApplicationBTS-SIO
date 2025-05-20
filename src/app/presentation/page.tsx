@@ -24,7 +24,7 @@ export default function Presentation() {
         <div className="flex flex-col md:flex-row gap-8">
 
           {/* Tronc commun */}
-          <div className="flex-1 bg-slate-800 border-3 border-white-700 rounded-xl shadow-lg hover:shadow-gray-800 transition-all duration-300 hover:scale-102 p-0 flex flex-col cursor-pointer">
+          <div className="flex-1 bg-slate-800 border-2 border-white-700 rounded-xl shadow-lg hover:shadow-gray-800 transition-all duration-300 hover:scale-102 p-0 flex flex-col cursor-pointer">
             <div className="flex flex-col flex-1 justify-center h-full w-full p-8">
               <h2 className="text-2xl font-bold text-cyan-300 mb-3 flex items-center gap-2 justify-center">
                 Tronc commun
@@ -48,7 +48,7 @@ export default function Presentation() {
           </div>
 
           {/* Matières Générales */}
-          <div className="flex-1 bg-slate-800 border-3 border-white-700 rounded-xl shadow-lg hover:shadow-gray-800 transition-all duration-300 hover:scale-102 p-0 flex flex-col cursor-pointer">
+          <div className="flex-1 bg-slate-800 border-2 border-white-700 rounded-xl shadow-lg hover:shadow-gray-800 transition-all duration-300 hover:scale-102 p-0 flex flex-col cursor-pointer">
             <div className="flex flex-col flex-1 justify-center h-full w-full p-8">
               <h2 className="text-2xl font-bold text-blue-400 mb-2 flex items-center gap-2 justify-center">
                 Matières Générales
@@ -66,9 +66,10 @@ export default function Presentation() {
           </div>
         </div>
 
-        {/* Comptes Rendus */}
+        {/* Comptes Rendus et Événements */}
         <div className="flex flex-col md:flex-row gap-8">
-          <div className="flex-1 bg-slate-800 border-3 border-white-700 rounded-xl shadow-lg hover:shadow-gray-800 transition-all duration-300 hover:scale-102 p-0 flex flex-col cursor-pointer">
+          {/* Comptes Rendus */}
+          <div className="flex-1 bg-slate-800 border-2 border-white-700 rounded-xl shadow-lg hover:shadow-gray-800 transition-all duration-300 hover:scale-102 p-0 flex flex-col cursor-pointer">
             <div className="flex flex-col flex-1 justify-center h-full w-full p-8">
               <h2 className="text-2xl font-bold text-indigo-300 mb-3 flex items-center gap-2 justify-center">
                 Comptes Rendus
@@ -83,11 +84,9 @@ export default function Presentation() {
               </ul>
             </div>
           </div>
-        </div>
 
-        {/* Événements */}
-        <div className="flex flex-col md:flex-row gap-8">
-          <div className="flex-1 bg-slate-800 border-3 border-white-700 rounded-xl shadow-lg hover:shadow-gray-800 transition-all duration-300 hover:scale-102 p-0 flex flex-col cursor-pointer">
+          {/* Événements */}
+          <div className="flex-1 bg-slate-800 border-2 border-white-700 rounded-xl shadow-lg hover:shadow-gray-800 transition-all duration-300 hover:scale-102 p-0 flex flex-col cursor-pointer">
             <div className="flex flex-col flex-1 justify-center h-full w-full p-8">
               <h2 className="text-2xl font-bold text-sky-300 mb-3 flex items-center gap-2 justify-center">
                 Événements

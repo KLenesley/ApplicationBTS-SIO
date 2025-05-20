@@ -25,7 +25,7 @@ export default function Specialites() {
         <div className="flex flex-col md:flex-row gap-8">
 
           {/* SISR */}
-          <div className="flex-1 bg-slate-800 border-3 border-white-700 rounded-xl shadow-lg hover:shadow-gray-800 transition-all duration-300 hover:scale-102 p-0 flex flex-col cursor-pointer">
+          <div className="flex-1 bg-slate-800 border-2 border-white-700 rounded-xl shadow-lg hover:shadow-gray-800 transition-all duration-300 hover:scale-102 p-0 flex flex-col cursor-pointer">
             <div className="flex flex-col flex-1 justify-center h-full w-full p-8">
               <h2 className="text-2xl font-bold text-cyan-300 mb-3 flex items-center gap-2 justify-center">
                 SISR – Infrastructure & Réseaux
@@ -44,7 +44,7 @@ export default function Specialites() {
           </div>
 
           {/* SLAM */}
-          <div className="flex-1 bg-slate-800 border-3 border-white-700 rounded-xl shadow-lg hover:shadow-gray-800 transition-all duration-300 hover:scale-102 p-0 flex flex-col cursor-pointer">
+          <div className="flex-1 bg-slate-800 border-2 border-white-700 rounded-xl shadow-lg hover:shadow-gray-800 transition-all duration-300 hover:scale-102 p-0 flex flex-col cursor-pointer">
             <div className="flex flex-col flex-1 justify-center h-full w-full p-8">
               <h2 className="text-2xl font-bold text-blue-300 mb-3 flex items-center gap-2 justify-center">
                 SLAM – Développement & Applications
@@ -66,7 +66,7 @@ export default function Specialites() {
         </div>
 
         {/* Cybersécurité */}
-        <div className="flex-1 bg-slate-800 border-3 border-white-700 rounded-xl shadow-lg hover:shadow-gray-800 transition-all duration-300 hover:scale-102 p-0 flex flex-col cursor-pointer">
+        <div className="flex-1 bg-slate-800 border-2 border-white-700 rounded-xl shadow-lg hover:shadow-gray-800 transition-all duration-300 hover:scale-102 p-0 flex flex-col cursor-pointer">
           <div className="flex flex-col flex-1 justify-center h-full w-full p-8">
             <h2 className="text-2xl font-bold text-indigo-400 mb-3 flex items-center gap-2 justify-center">
               Cybersécurité

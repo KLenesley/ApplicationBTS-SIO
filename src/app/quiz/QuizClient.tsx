@@ -50,21 +50,21 @@ export default function QuizClient({ quiz_questions, quiz_answers }: { quiz_ques
           if (currentQuestionIndex < quiz_questions.length) {
             return quiz_questions.map((question: QuizQuestion, index: number) => (
               index === currentQuestionIndex && (
-                <div key={index} className="mb-8 bg-[#334155]/80 border border-cyan-700 rounded-xl shadow-xl p-8 animate-fade-in">
+                <div key={index} className="mb-8 bg-slate-800 border-2 border-white-700 rounded-xl shadow-xl p-8 animate-fade-in">
                   <form onSubmit={handleNextQuestion} className="space-y-6">
                     <input type="hidden" name="id" value={question.id} />
-                    <h2 className="text-xl font-bold text-cyan-300 mb-4 text-center">{index + 1}. {question.question}</h2>
+                    <h2 className="text-xl font-bold text-white-300 mb-4 text-center">{index + 1}. {question.question}</h2>
                     <div className="flex flex-col gap-4 items-center">
                       {quiz_answers.filter((answer: QuizAnswer) => answer.question_id === question.id).map((answer: QuizAnswer, answerIndex: number) => (
                         <button key={answerIndex} type="button" onClick={() => {
-                            const selectedAnswerWeight = quiz_answers.find((a: QuizAnswer) => a.question_id === question.id && a.answer === answer.answer)?.answerF ?? 0;
-                            setUserAnswers((prevAnswers) => ({...prevAnswers, [question.id]: { answer: answer.answer, weight: selectedAnswerWeight }, }));
-                            setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
-                          }}
-                          className={`w-full sm:w-2/3 p-4 text-lg rounded-lg border-2 font-semibold transition-all duration-200 shadow-md focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400
-                            ${ userAnswers[question.id]?.answer === answer.answer
-                                ? "bg-gradient-to-r from-purple-600 to-cyan-600 text-white border-purple-400 shadow-lg scale-105"
-                                : "bg-gray-700 text-gray-200 border-gray-600 hover:bg-cyan-700 hover:text-white hover:border-cyan-400" }`}
+                          const selectedAnswerWeight = quiz_answers.find((a: QuizAnswer) => a.question_id === question.id && a.answer === answer.answer)?.answerF ?? 0;
+                          setUserAnswers((prevAnswers) => ({ ...prevAnswers, [question.id]: { answer: answer.answer, weight: selectedAnswerWeight }, }));
+                          setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
+                        }}
+                          className={`w-full sm:w-2/3 p-4 text-lg rounded-xl border-2 font-semibold transition-all duration-200 shadow-md focus:outline-none focus:ring-2 focus:ring-white-400 focus:border-white-400 cursor-pointer
+                            ${userAnswers[question.id]?.answer === answer.answer
+                              ? "bg-blue-700 hover:bg-blue-800 text-white border-purple-400 shadow-lg scale-105"
+                              : "bg-gray-700 text-gray-200 border-gray-600 hover:bg-sky-700 hover:text-white hover:border-sky-400"}`}
                         >
                           {answer.answer}
                         </button>
@@ -78,21 +78,25 @@ export default function QuizClient({ quiz_questions, quiz_answers }: { quiz_ques
             answerWeights = Object.values(userAnswers).reduce((sum, answer) => sum + (answer?.weight ?? 0), 0);
             finalScore = Math.round(((answerWeights / maxScore) * 100) * 100) / 100;
             return (
-              <div className="bg-[#334155]/80 border border-cyan-700 rounded-xl shadow-xl p-8 animate-fade-in">
-                <h2 className="text-2xl font-bold mb-4 text-cyan-300 text-center">Vos réponses</h2>
+              <div className="bg-slate-800 border-2 border-white-700 rounded-xl shadow-xl p-8 animate-fade-in">
+                <h2 className="text-2xl font-bold mb-4 text-white-300 text-center">Résumé de vos réponses</h2>
                 <ul className="space-y-4 mb-6">
                   {quiz_questions.map((question: QuizQuestion) => (
                     <li key={question.id} className="bg-gray-700/80 rounded-lg p-4 shadow border border-gray-600">
-                      <h3 className="font-semibold text-cyan-200">{question.question}</h3>
-                      <p className="text-gray-300">Votre réponse : <span className="font-bold text-cyan-300">{userAnswers[question.id]?.answer}</span></p>
+                      <h3 className="font-semibold text-white-200">{question.question}</h3>
+                      <p className="text-gray-300">Votre réponse : <span className="font-bold text-sky-300">{userAnswers[question.id]?.answer}</span></p>
                     </li>
                   ))}
                 </ul>
                 <div className="text-center">
-                  <h2 className="text-2xl font-bold mt-6 text-cyan-300">Résultat</h2>
-                  <p className="text-3xl font-extrabold text-cyan-400 mt-2 mb-4">{finalScore} %</p>
-                  <button onClick={handleRestart} className="mt-4 px-8 py-3 bg-gradient-to-r from-purple-600 to-cyan-600 text-white font-bold rounded-full shadow-lg hover:from-purple-700 hover:to-cyan-700 transition-all duration-200">
-                    Recommencer
+                  <h2 className="text-2xl font-bold mt-6 text-white-300">Résultat</h2>
+                    <p className="text-4xl font-extrabold mt-2 mb-4">
+                    <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+                      {finalScore}%
+                    </span>
+                    </p>
+                  <button onClick={handleRestart} className="mt-4 px-8 py-3 bg-blue-700 hover:bg-blue-800 text-white font-bold rounded-full shadow-lg hover:from-purple-700 hover:to-cyan-700 transition-all duration-200 cursor-pointer">
+                    Recommencer le quiz
                   </button>
                 </div>
               </div>

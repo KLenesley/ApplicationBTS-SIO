@@ -23,44 +23,68 @@ export default function Prepa() {
 
         {/* Matières */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="flex-1 bg-[#334155] border border-red-700 rounded-xl shadow-xl hover:shadow-red-700 transition-all duration-300 hover:scale-105 p-7 text-center">
-            <h2 className="text-xl font-bold text-red-300 mb-3 flex items-center gap-2 justify-center">
-              <span>∑</span> Mathématiques
-            </h2>
-            <p className="text-slate-200 text-sm leading-relaxed">
-              Compréhension approfondie et complexes des concepts comme les exponentiels, logarithmes et probabilités.
-            </p>
+
+          {/* Mathématiques */}
+          <div className="flex-1 bg-red-800/25 border-2 border-white-700 rounded-xl shadow-lg hover:shadow-gray-800 transition-all duration-300 hover:scale-102 p-0 flex flex-col cursor-pointer">
+            <div className="flex flex-col flex-1 justify-center h-full w-full p-8">
+              <h2 className="text-2xl font-bold text-white-300 mb-3 flex items-center gap-2 justify-center">
+                Mathématiques
+              </h2>
+              <div className="flex flex-col items-center">
+                <p className="text-gray-300 text-base leading-relaxed mb-4 flex-grow w-full h-full text-center">
+                  Compréhension approfondie et complexe des concepts comme les <span className="font-bold">exponentiels</span>, <span className="font-bold">logarithmes</span> et <span className="font-bold">probabilités</span>.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="flex-1 bg-[#334155] border border-indigo-700 rounded-xl shadow-xl hover:shadow-indigo-700 transition-all duration-300 hover:scale-105 p-7 text-center">
-            <h2 className="text-xl font-bold text-indigo-300 mb-3 flex items-center gap-2 justify-center">
-              <span>⚡</span> Physique
-            </h2>
-            <p className="text-slate-200 text-sm leading-relaxed">
-              Branche plus scientifique abordant le thème de l'électrocinétique.
-            </p>
+
+          {/* Physique */}
+          <div className="flex-1 bg-blue-800/25 border-2 border-white-700 rounded-xl shadow-lg hover:shadow-gray-800 transition-all duration-300 hover:scale-102 p-0 flex flex-col cursor-pointer">
+            <div className="flex flex-col flex-1 justify-center h-full w-full p-8">
+              <h2 className="text-2xl font-bold text-white-300 mb-3 flex items-center gap-2 justify-center">
+                Physique
+              </h2>
+              <div className="flex flex-col items-center">
+                <p className="text-gray-300 text-base leading-relaxed mb-4 flex-grow w-full h-full text-center">
+                  Approfondissement des concepts scientifiques, notamment l'<span className="font-bold">électrocinétique</span> et d'autres notions fondamentales de la physique.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="flex-1 bg-[#334155] border border-black-700 rounded-xl shadow-xl hover:shadow-gray-700 transition-all duration-300 hover:scale-105 p-7 text-center">
-            <h2 className="text-xl font-bold text-gray-300 mb-3 flex items-center gap-2 justify-center">
-              <span>💬</span> Humanités
-            </h2>
-            <p className="text-slate-200 text-sm leading-relaxed">
-              Développement des compétences en communication orale afin de débattre sur un sujet et révision de la syntaxe française afin d'avoir une certification.
-            </p>
+
+          {/* Humanités */}
+          <div className="flex-1 bg-green-800/25 border-2 border-white-700 rounded-xl shadow-lg hover:shadow-gray-800 transition-all duration-300 hover:scale-102 p-0 flex flex-col cursor-pointer">
+            <div className="flex flex-col flex-1 justify-center h-full w-full p-8">
+              <h2 className="text-2xl font-bold text-gray-300 mb-3 flex items-center gap-2 justify-center">
+                Humanités
+              </h2>
+              <div className="flex flex-col items-center">
+                <p className="text-gray-300 text-base leading-relaxed mb-4 flex-grow w-full h-full text-center">
+                  Développement des compétences en <span className="font-bold">communication orale</span> pour débattre sur un sujet, et révision de la <span className="font-bold">syntaxe française</span> pour obtenir une certification.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="flex-1 bg-[#334155] border border-green-700 rounded-xl shadow-xl hover:shadow-green-700 transition-all duration-300 hover:scale-105 p-7 text-center">
-            <h2 className="text-xl font-bold text-green-300 mb-3 flex items-center gap-2 justify-center">
-              <span>🌍</span> Anglais
-            </h2>
-            <p className="text-slate-200 text-sm leading-relaxed">
-              Renforcement des compétences pour évoluer en anglais à l'oral dans un contexte international.
-            </p>
+
+          {/* Anglais */}
+          <div className="flex-1 bg-yellow-800/25 border-2 border-white-700 rounded-xl shadow-lg hover:shadow-gray-800 transition-all duration-300 hover:scale-102 p-0 flex flex-col cursor-pointer">
+            <div className="flex flex-col flex-1 justify-center h-full w-full p-8">
+              <h2 className="text-2xl font-bold text-white-300 mb-3 flex items-center gap-2 justify-center">
+                Anglais
+              </h2>
+              <div className="flex flex-col items-center">
+                <p className="text-gray-300 text-base leading-relaxed mb-4 flex-grow w-full h-full text-center">
+                  Renforcement des compétences pour évoluer en anglais à l'oral dans un contexte international.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Préparation intensive */}
-        <div className="bg-[#334155] border border-cyan-700 rounded-xl shadow-xl hover:shadow-cyan-700 transition-all duration-300 hover:scale-105 p-7 text-center">
-          <p className="text-slate-200 text-sm leading-relaxed">
-            <span className="text-cyan-400 font-extrabold">Préparation intensive</span> : 150h supplémentaires intégrées au BTS pour maximiser vos chances d’intégrer l’ISEN avec 800€ par semestre.
+        <div className="bg-slate-800 border-2 border-white-700 rounded-xl shadow-xl p-7 text-center">
+          <p className="text-slate-200 text-md leading-relaxed">
+            <b>Préparation intensive</b> : 150h supplémentaires intégrées au BTS pour maximiser vos chances d’intégrer l’ISEN avec 800€ par semestre.
           </p>
         </div>
       </div>

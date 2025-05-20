@@ -17,21 +17,22 @@ export default function Head() {
 
     return (
         <>
-            <header className="fixed top-0 left-0 w-full bg-gradient-to-r from-gray-500 via-gray-500 to-gray-500 shadow-xl z-50">
-                <nav className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+            <header className="fixed top-0 left-0 w-full bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 shadow-lg z-50">
+                <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                     <a
                         href="/"
-                        className="flex items-center gap-3 text-gray-900 hover:opacity-90 transition-opacity"
+                        className="flex items-center gap-3 text-white hover:opacity-90 transition-opacity"
                     >
-                        <img src="/NDLP_logo.png" alt="Logo NDLP" className="h-10 w-auto drop-shadow-lg" />
+                        <img src="/NDLP_logo.png" alt="Logo NDLP" className="h-12 w-auto drop-shadow-lg" />
+                        <span className="text-xl font-bold">NDLP</span>
                     </a>
-                    <ul className="hidden md:flex flex-1 justify-center gap-10 items-center">
+                    <ul className="hidden md:flex flex-1 justify-center gap-8 items-center">
                         {navLinks.map(([label, href]) => (
                             <li key={href}>
                                 <a
                                     href={href}
-                                    className={`text-gray-100 font-bold px-3 py-1 rounded-lg transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-green-300
-                                        ${pathname === href ? 'bg-blue-700 text-white shadow' : 'hover:text-blue-200'}
+                                    className={`text-white font-medium px-4 py-2 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500
+                                        ${pathname === href ? 'bg-blue-600 text-white shadow-md' : 'hover:bg-gray-700 hover:text-blue-300'}
                                     `}
                                 >
                                     {label}
@@ -40,28 +41,28 @@ export default function Head() {
                         ))}
                     </ul>
                     <button
-                        className={"md:hidden flex flex-col justify-center items-center w-10 h-10 rounded focus:outline-none focus:ring-2 focus:ring-blue-300"}
+                        className={"md:hidden flex flex-col justify-center items-center w-10 h-10 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-700 hover:bg-gray-600"}
                         aria-label="Ouvrir le menu"
                         aria-expanded={menuOpen}
                         onClick={() => setMenuOpen((open) => !open)}
                     >
-                        <span className={`block w-6 h-0.5 bg-gray-100 mb-1 transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
-                        <span className={`block w-6 h-0.5 bg-gray-100 mb-1 transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`}></span>
-                        <span className={`block w-6 h-0.5 bg-gray-100 transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+                        <span className={`block w-6 h-0.5 bg-white mb-1 transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+                        <span className={`block w-6 h-0.5 bg-white mb-1 transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`}></span>
+                        <span className={`block w-6 h-0.5 bg-white transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
                     </button>
                 </nav>
                 <div
                     id="mobile-menu"
-                    className={`md:hidden bg-gradient-to-r from-gray-600 via-gray-600 to-gray-600 shadow-xl transition-all duration-300 overflow-hidden ${menuOpen ? 'max-h-96' : 'max-h-0'}`}
+                    className={`md:hidden bg-gray-800 shadow-lg transition-all duration-300 overflow-hidden ${menuOpen ? 'max-h-96' : 'max-h-0'}`}
                     aria-hidden={!menuOpen}
                 >
-                    <ul className="flex flex-col gap-2 px-6 py-4">
+                    <ul className="flex flex-col gap-4 px-6 py-4">
                         {navLinks.map(([label, href]) => (
                             <li key={href}>
                                 <a
                                     href={href}
-                                    className={`block font-bold px-3 py-2 rounded-lg transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-green-300
-                                        ${pathname === href ? 'bg-blue-700 text-white shadow' : 'hover:text-blue-200'}
+                                    className={`block font-medium px-4 py-2 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500
+                                        ${pathname === href ? 'bg-blue-600 text-white shadow-md' : 'hover:bg-gray-700 hover:text-blue-300'}
                                     `}
                                     onClick={() => setMenuOpen(false)}
                                 >
