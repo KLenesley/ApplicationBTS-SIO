@@ -17,7 +17,7 @@ export default function Home() {
             priority
           />
           <h1 className="text-4xl sm:text-5xl font-bold text-cyan-300 drop-shadow-md">
-            Bonjour {user || "visiteur"},
+            Bonjour !
           </h1>
           <p className="text-lg sm:text-xl text-slate-300 max-w-2xl leading-relaxed mt-2">
             Bienvenue sur la page du <span className="text-cyan-400 font-semibold">BTS SIO</span>, une formation au cœur des métiers du numérique.
