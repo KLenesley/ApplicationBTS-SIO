@@ -13,7 +13,12 @@ export default async function Questions() {
   // question_id = id of the question (foreign key)
   // answer = text of the answer
 
-  return (
-    <QuizClient quiz_questions={quiz_questions} quiz_answers={quiz_answers} />
-  );
+  if (!quiz_questions || !quiz_answers) {
+    return <div>Loading...</div>;
+  }
+  else {
+    return (
+      <QuizClient quiz_questions={quiz_questions} quiz_answers={quiz_answers} />
+    );
+  }
 }
