@@ -22,7 +22,7 @@ npm install
 Cette commande installera tous les composants utilisés par le projet.
 
 ### 4. Créer la base de données et le fichier .env
-Pour le bon fonctionnement de quiz, vous devez avoir un compte sur Supabase (gratuit).
+Pour le bon fonctionnement de quiz, vous devez avoir un compte sur [Supabase](https://supabase.com/) (gratuit).
 Créez une nouvelle base de données dans laquelle vous mettrez deux tables, `quiz_quetions` et `quiz_answers`.
 
 Dans `quiz_questions`, créez :
@@ -34,6 +34,10 @@ Dans `quiz_answers`, créez :
 - une colonne **question_id** également de type **int8** (qui servira de liaison avec les id de la table `quiz_questions`),
 - une table **answer** de type **varchar**,
 - une table **answerF** de type **int8** (qui permettra de définir la force de chaque réponse afin d'établir la note finale sur 100).
+
+Après cela, enregistrez et cliquez sur le bouton `Connect` et allez dans **App Frameworks** puis copiez le contenu.
+Mettez-le dans un fichier **.env** créé à la racine de votre dossier local.
+Collez le contenu dedans et le quiz fonctionnera.
 
 ### 5. Lancer le projet
 Enfin, ouvrez votre IDE (par exemple Visual Studio Code) puis, dans le terminal, tapez :
